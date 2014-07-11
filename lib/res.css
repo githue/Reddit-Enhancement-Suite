@@ -492,7 +492,7 @@ p.moduleListing {
 	margin-top: 10px;
 	padding-top: 0;
 	clear: both;
-	width: auto;
+	width: 100%;
 }
 .moduleToggle, .toggleButton {
 	float: left;
@@ -734,29 +734,23 @@ p.moduleListing {
 }
 #SearchRES-results-container {
 	display: none;
-	padding: 0 12px 0 3px;
+	line-height: 1.3;
+}
+ul#SearchRES-results {
+	margin: 10px -12px 0 -12px;
 }
 #SearchRES-results-hidden {
 	display: none;
-	font-style: italic;
-}
-#SearchRES-results-hidden  {
-	display: none;
+	margin: 0 -12px 0 -12px;
+	padding: 10px;
+	border-top: 1px solid rgb(200,200,200);
+	background: rgb(255,255,255);
 }
 .advanced-options-disabled #SearchRES-results-hidden.advancedResults {
-	display: inline;
+	display: block;
 }
 #RESConsoleContent.advanced-options-disabled .SearchRES-result-item.advanced {
 	display: none;
-}
-#allOptionsContainer #SearchRES-boilerplate {
-	margin: 10px;
-	padding: 10px;
-	background: rgb(230,230,230);
-	border-radius: 2px;
-}
-#SearchRES-results-container {
-	line-height: 1.5;
 }
 #SearchRES-results-container h3 {
 	font-size: 16px;
@@ -768,10 +762,11 @@ p.moduleListing {
 #SearchRES-results-container li {
 	list-style: none;
 	position: relative;
-	border-top: 1px solid rgb(200,220,240);
+	border-top: 1px solid rgb(240,243,252);
+	background-color: rgb(255,255,255);
 	cursor: pointer;
 	margin: 0;
-	padding: 12px;
+	padding: 12px 20px;
 }
 #SearchRES-results-container li:hover {
 	background-color: rgb(250,250,255);
@@ -780,11 +775,19 @@ p.moduleListing {
 	color: rgb(50,120,200);
 	margin: 0 0 .5em 0;
 }
+#SearchRES-results-container .SearchRES-result-description {
+	color: rgb(120,120,120);
+}
+#SearchRES-boilerplate {
+	margin: 0px -12px;
+	padding: 10px;
+	border-top: 1px solid rgb(200,200,200);
+}
 .SearchRES-result-copybutton {
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	opacity: 0.4;
+	opacity: 0.2;
 	width: 26px;
 	height: 22px;
 	background: no-repeat center center;
@@ -792,7 +795,7 @@ p.moduleListing {
 	display: none;
 }
 .SearchRES-result-copybutton:hover {
-	opacity: 1;
+	opacity: .7;
 }
 #SearchRES-results li:hover .SearchRES-result-copybutton { display: block; }
 #SearchRES-input-submit {
