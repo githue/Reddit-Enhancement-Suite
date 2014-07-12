@@ -744,7 +744,6 @@ ul#SearchRES-results {
 	margin: 0 -12px 0 -12px;
 	padding: 10px;
 	border-top: 1px solid rgb(200,200,200);
-	background: rgb(255,255,255);
 }
 .advanced-options-disabled #SearchRES-results-hidden.advancedResults {
 	display: block;

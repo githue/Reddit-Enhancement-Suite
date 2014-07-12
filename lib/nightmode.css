@@ -312,6 +312,15 @@
 	background-color: #ddd;
 }
 
+.res-nightmode #SearchRES-results-container li {
+	border-top: 1px solid rgb(230,230,230);
+	background-color: rgb(238, 238, 238);
+}
+
+.res-nightmode #SearchRES-results-container li:hover {
+	background-color: rgb(243, 243, 248);
+}
+
 .res-nightmode #RESDashboard .RESDashboardComponentHeader {
 	background-color: silver;
 }
@@ -852,7 +861,7 @@
 }
 
 .res-nightmode .new-comment .usertext-body .md p a,
-.res-nightmode code {
+.res-nightmode .usertext code {
 	color: #87CEEB;
 }
 
