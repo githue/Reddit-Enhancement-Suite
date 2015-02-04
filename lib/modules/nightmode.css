@@ -39,6 +39,46 @@
 	background-color: #222;
 	color: #aaa;
 }
+/* RESPopup */
+.res-nightmode .RESPopup .RESPopupClose {
+  background-color: rgb(34, 34, 34);
+}
+.res-nightmode .RESPopup:before {
+  border-right-color: rgb(255, 255, 255);
+}
+.res-nightmode .RESPopup.rightArrow:before {
+  border-right-color: transparent;
+  border-left-color: rgb(255, 255, 255);
+}
+.res-nightmode .RESPopup {
+	color: rgb(200,200,200);
+  background-image: linear-gradient(rgb(34, 34, 34) 60%, rgb(34, 34, 34));
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,.3);
+}
+.res-nightmode .RESPopupActive {
+  box-shadow: 0px 6px 10px 0px rgba(0,0,0,.3);
+}
+.res-nightmode .RESPopup .RESPopupTitle,
+.res-nightmode .RESPopup .RESPopupDeeplinks a:hover {
+  background-color: rgb(45,45,45);
+}
+.res-nightmode .RESPopup,
+.res-nightmode .RESPopup .RESPopupOptions,
+.res-nightmode .RESPopup .RESPopupDeeplinks,
+.res-nightmode .RESPopup .RESPopupDeeplinks li,
+.res-nightmode .RESPopup .RESPopupKarma span:first-child,
+.res-nightmode .RESPopup .RESPopupKarma span:last-child,
+.res-nightmode .RESPopup .over18,
+.res-nightmode .RESPopup .RESPopupClose {
+  border-color: rgb(60,60,60);
+}
+.res-nightmode .RESPopup .RESPopupClose {
+  color: rgb(100, 100, 100);
+}
+.res-nightmode .RESPopup .RESPopupClose:hover {
+  color: rgb(200, 50, 50);
+}
+/* end RESPopup */
 .res-nightmode #login_login {
 	background-color: #333;
 	color: #bbb;

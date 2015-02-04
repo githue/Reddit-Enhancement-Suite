@@ -88,6 +88,7 @@
 				"modules/tableTools.js",
 				"modules/modhelper.js",
 				"modules/quickMessage.js",
+				"modules/userInfo.js",
 				"core/init.js"
 			],
 			"css": [

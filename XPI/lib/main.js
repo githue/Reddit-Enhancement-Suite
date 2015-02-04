@@ -215,6 +215,7 @@ pageMod.PageMod({
 		self.data.url('modules/tableTools.js'),
 		self.data.url('modules/modhelper.js'),
 		self.data.url('modules/quickMessage.js'),
+		self.data.url('modules/userInfo.js'),
 		self.data.url('core/init.js')
 	],
 	contentStyleFile: [
