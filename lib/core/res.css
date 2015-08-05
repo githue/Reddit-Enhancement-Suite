@@ -293,16 +293,6 @@ body.res-console-open {
 #RESConsoleContent.advanced-options-disabled .optionContainer.advanced {
 	display: none;
 }
-.optionContainer.advanced .res-option-title:before,
-#RESAllOptionsSpan:after {
-	content: '\F15A';
-	margin-left: 3px;
-	color: rgb(230,30,30);
-	font: normal 11px "Batch";
-}
-.optionContainer.advanced .res-option-title:before {
-	margin: 0 4px 0 -15px; /* sum of left+right equal to font-size in negative */
-}
 .RESDialogSmall {
 	background-color: #fff;
 	border: 1px solid #c7c7c7;
@@ -452,45 +442,44 @@ body.res-console-open {
 .optionContainer.depends {
 	margin-top: -11px;
 	border-radius: 0 0 2px 2px;
-	background-color: rgb(251, 252, 255);
+	background-color: rgb(251,252,255);
 }
 .optionContainer.highlight {
-	box-shadow: 0 0 5px 1px rgb(171, 204, 227);
+	box-shadow: 0 0 5px 1px rgb(171,204,227);
 }
-.optionContainer.highlight .res-option-title {
+.optionContainer.highlight .optionTitle {
 	font-weight: bold;
 }
-.optionContainer:hover {
+.optionTitle {
+	font-size: 14px;
+	order: 0;
+	min-width: 200px;
 }
-.res-option-about {
+.optionDescription {
 	line-height: 1.5;
+	order: 2;
 }
-.res-option-setting {
-	margin-left: auto;
+.optionSetting {
 	white-space: nowrap;
+	order: 1;
 }
-.optionContainer:not(.table) .res-option-setting {
-	padding-left: 10px;
+.optionContainer.advanced .optionTitle:before,
+#RESAllOptionsSpan:after {
+	content: '\F15A';
+	margin-left: 3px;
+	color: rgb(230,30,30);
+	font: normal 11px "Batch";
+}
+.optionContainer.advanced .optionTitle:before {
+	margin: 0 4px 0 -15px; /* sum of left+right equal to font-size in negative */
+}
+.optionContainer:not(.table) .optionSetting {
+	padding: 0 10px;
 }
 #RESConsoleContainer input[type=radio],
 #RESConsoleContainer input[type=checkbox] {
 	vertical-align: middle;
 	margin-right: 3px;
-}
-.res-option-title {
-	font-size: 14px;
-}
-.optionContainer:hover .res-option-title:after {
-	content: attr(title);
-	color: rgb(150,150,150);
-	margin-left: 10px;
-	display: inline-block;
-	max-width: 500px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	font-size: 12px;
-	vertical-align: bottom; /* for webkit */
 }
 .moduleButton {
 	font: 12px sans-serif;
@@ -642,6 +631,9 @@ body.res-console-open {
 	width: 100%;
 	min-width: 300px;
 	box-sizing: border-box;
+}
+#RESConfigPanelOptions ul.token-input-list-facebook {
+	margin: 0;
 }
 .optionContainer .enum img {
 	max-width: 16px;
