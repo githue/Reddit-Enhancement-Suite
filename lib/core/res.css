@@ -43,7 +43,6 @@ body.res-console-open {
 	color: orangered;
 	border-radius: 10px;
 	padding: 10px 20px;
-	border: 1px solid rgb(255,69,0);
 }
 .donateOption {
 	margin-top: 25px;
@@ -129,13 +128,13 @@ body.res-console-open {
 	from { transform: scale(0, 0); }
 	to { transform: scale(1.5, 1.5); }
 }
-.res-gearIcon-legacy .gearIcon{
+.res-gearIcon-legacy.gearIcon {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
 	background-repeat: no-repeat;
 }
-.res-gearIcon-legacy .gearIcon::after {
+.res-gearIcon-legacy.gearIcon::after {
 	content: none;
 }
 #RESMainGearOverlay .gearIcon {
@@ -838,14 +837,16 @@ body.res-console-open {
 	opacity: 1;
 }
 .RESNotification.timerOn {
-	-webkit-animation: notificationFadeOut, 3s, ease-in, 3s, 1, normal, forwards, running;
-	animation: notificationFadeOut, 3s, ease-in, 3s, 1, normal, forwards, running;
-}
-@-webkit-keyframes notificationFadeOut {
-	to { opacity: 0; }
+	animation-duration: 3s; /* default */
+	animation-delay: 5s; /* default */
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	animation-name: notificationFadeOut;
 }
 @keyframes notificationFadeOut {
-	to { opacity: 0; }
+	to {
+		opacity: 0;
+	}
 }
 .RESNotification:not(:first-of-type) {
 	margin-top: 5px;
